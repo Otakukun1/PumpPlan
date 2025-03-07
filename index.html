@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Program</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Home Screen -->
+        <div id="home">
+            <h1>Gym Program</h1>
+            <div class="list">
+                <button onclick="showSection('week1')">Week 1</button>
+                <button onclick="showSection('week2')">Week 2</button>
+                <button onclick="showSection('week3')">Week 3</button>
+                <button onclick="showSection('week4')">Week 4</button>
+            </div>
+        </div>
+
+        <!-- Week 1 -->
+        <div id="week1" class="hidden">
+            <h1>Week 1</h1>
+            <div class="list">
+                <button onclick="showSection('day1')">Day 1</button>
+                <button onclick="showSection('day2')">Day 2</button>
+                <button onclick="showSection('day3')">Day 3</button>
+                <button onclick="showSection('day4')">Day 4</button>
+            </div>
+            <button class="back-btn" onclick="showSection('home')">Back</button>
+        </div>
+
+        <!-- Week 2 -->
+        <div id="week2" class="hidden">
+            <h1>Week 2</h1>
+            <div class="list">
+                <button onclick="showSection('day1')">Day 1</button>
+                <button onclick="showSection('day2')">Day 2</button>
+                <button onclick="showSection('day3')">Day 3</button>
+                <button onclick="showSection('day4')">Day 4</button>
+            </div>
+            <button class="back-btn" onclick="showSection('home')">Back</button>
+        </div>
+
+        <!-- Day 1 Workout -->
+        <div id="day1" class="hidden">
+            <h1>Day 1 - Upper Body</h1>
+            <ul>
+                <li>Bench Press - 4 sets x 10 reps</li>
+                <li>Pull-ups - 3 sets x 8 reps</li>
+                <li>Shoulder Press - 3 sets x 12 reps</li>
+                <li>Triceps Dips - 3 sets x 10 reps</li>
+            </ul>
+            <button class="back-btn" onclick="showSection('week1')">Back</button>
+        </div>
+
+        <!-- Day 2 Workout -->
+        <div id="day2" class="hidden">
+            <h1>Day 2 - Lower Body</h1>
+            <ul>
+                <li>Squats - 4 sets x 10 reps</li>
+                <li>Deadlifts - 3 sets x 8 reps</li>
+                <li>Leg Press - 3 sets x 12 reps</li>
+                <li>Calf Raises - 3 sets x 15 reps</li>
+            </ul>
+            <button class="back-btn" onclick="showSection('week1')">Back</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
